@@ -135,7 +135,7 @@ var ArrayEditor = /** @class */ (function (_super) {
     ArrayEditor = tslib_1.__decorate([
         Component({
             template: vueArrayEditorTemplateHtml,
-            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "dragula", "md", "hljs", "forceHttps"],
+            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "disableFilters", "dragula", "md", "hljs", "forceHttps"],
         })
     ], ArrayEditor);
     return ArrayEditor;

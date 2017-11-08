@@ -6,7 +6,7 @@ import { vueObjectEditorTemplateHtml } from "../vue-variables";
 
 @Component({
     template: vueObjectEditorTemplateHtml,
-    props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "dragula", "md", "hljs", "forceHttps"],
+    props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "disableFilters", "dragula", "md", "hljs", "forceHttps"],
 })
 export class ObjectEditor extends Vue {
     schema: common.ObjectSchema;

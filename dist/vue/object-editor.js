@@ -106,7 +106,7 @@ var ObjectEditor = /** @class */ (function (_super) {
     ObjectEditor = tslib_1.__decorate([
         Component({
             template: vueObjectEditorTemplateHtml,
-            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "dragula", "md", "hljs", "forceHttps"],
+            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "disableFilters", "dragula", "md", "hljs", "forceHttps"],
         })
     ], ObjectEditor);
     return ObjectEditor;

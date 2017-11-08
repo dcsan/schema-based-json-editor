@@ -26,7 +26,8 @@ let locale: Locale | null = null;
 				:locale="locale"
 				:dragula="dragula"
 				:markdownit="markdownit"
-				:hljs="hljs"
+                :hljs="hljs"
+                :disable-filters="true"
 				:force-https="false">
 			</json-editor>
 		</div>
@@ -40,6 +41,7 @@ let locale: Locale | null = null;
 				:dragula="dragula"
 				:markdownit="markdownit"
 				:hljs="hljs"
+                :disable-filters="true"
 				:force-https="false">
 			</json-editor>
 		</div>

@@ -10,7 +10,7 @@ var Editor = /** @class */ (function (_super) {
     Editor = tslib_1.__decorate([
         Component({
             template: vueEditorTemplateHtml,
-            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "dragula", "md", "hljs", "forceHttps"],
+            props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "disableFilters", "dragula", "md", "hljs", "forceHttps"],
         })
     ], Editor);
     return Editor;

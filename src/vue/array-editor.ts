@@ -6,7 +6,7 @@ import { vueArrayEditorTemplateHtml } from "../vue-variables";
 
 @Component({
     template: vueArrayEditorTemplateHtml,
-    props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "dragula", "md", "hljs", "forceHttps"],
+    props: ["schema", "initialValue", "title", "theme", "icon", "locale", "readonly", "required", "hasDeleteButton", "disableFilters", "dragula", "md", "hljs", "forceHttps"],
 })
 export class ArrayEditor extends Vue {
     schema: common.ArraySchema;
