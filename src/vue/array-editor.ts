@@ -18,6 +18,7 @@ export class ArrayEditor extends Vue {
     readonly: boolean;
     required: boolean;
     hasDeleteButton: boolean;
+    disableFilters: boolean;
     dragula?: Dragula;
     md?: MarkdownIt;
     hljs?: typeof hljs;
@@ -62,7 +63,7 @@ export class ArrayEditor extends Vue {
         return common.getTitle(this.title, this.schema.title);
     }
     get showFilter() {
-        return this.getValue.length >= common.minItemCountIfNeedFilter;
+        return !this.disableFilters && this.getValue.length >= common.minItemCountIfNeedFilter;
     }
 
     beforeDestroy() {

@@ -31,7 +31,7 @@ import { vueTemplateHtml } from "./vue-variables";
 
 @Component({
     template: vueTemplateHtml,
-    props: ["schema", "initialValue", "theme", "icon", "locale", "readonly", "dragula", "markdownit", "hljs", "forceHttps"],
+    props: ["schema", "initialValue", "theme", "icon", "locale", "readonly", "dragula", "markdownit", "hljs", "forceHttps", "disableFilters"],
 })
 class JSONEditor extends Vue {
     theme: string;
@@ -40,6 +40,7 @@ class JSONEditor extends Vue {
     markdownit: MarkdownItType;
     hljs: typeof hljs;
     forceHttps: boolean;
+    disableFilters: boolean;
 
     themeObject = common.getTheme(this.theme);
     localeObject: common.Locale;

@@ -74,7 +74,7 @@ var ObjectEditor = /** @class */ (function (_super) {
     });
     Object.defineProperty(ObjectEditor.prototype, "showFilter", {
         get: function () {
-            return this.properties.length >= common.minItemCountIfNeedFilter;
+            return !this.disableFilters && this.properties.length >= common.minItemCountIfNeedFilter;
         },
         enumerable: true,
         configurable: true

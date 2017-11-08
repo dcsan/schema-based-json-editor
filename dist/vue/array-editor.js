@@ -75,7 +75,7 @@ var ArrayEditor = /** @class */ (function (_super) {
     });
     Object.defineProperty(ArrayEditor.prototype, "showFilter", {
         get: function () {
-            return this.getValue.length >= common.minItemCountIfNeedFilter;
+            return !this.disableFilters && this.getValue.length >= common.minItemCountIfNeedFilter;
         },
         enumerable: true,
         configurable: true

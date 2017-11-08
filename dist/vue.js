@@ -40,7 +40,7 @@ var JSONEditor = /** @class */ (function (_super) {
     JSONEditor = tslib_1.__decorate([
         Component({
             template: vueTemplateHtml,
-            props: ["schema", "initialValue", "theme", "icon", "locale", "readonly", "dragula", "markdownit", "hljs", "forceHttps"],
+            props: ["schema", "initialValue", "theme", "icon", "locale", "readonly", "dragula", "markdownit", "hljs", "forceHttps", "disableFilters"],
         }),
         tslib_1.__metadata("design:paramtypes", [])
     ], JSONEditor);

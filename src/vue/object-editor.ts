@@ -18,6 +18,7 @@ export class ObjectEditor extends Vue {
     readonly: boolean;
     required: boolean;
     hasDeleteButton: boolean;
+    disableFilters: boolean;
     dragula?: Dragula;
     md?: MarkdownIt;
     hljs?: typeof hljs;
@@ -68,7 +69,7 @@ export class ObjectEditor extends Vue {
         return common.getTitle(this.title, this.schema.title);
     }
     get showFilter() {
-        return this.properties.length >= common.minItemCountIfNeedFilter;
+        return !this.disableFilters && this.properties.length >= common.minItemCountIfNeedFilter;
     }
 
     isRequired(property: string) {

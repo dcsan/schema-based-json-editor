@@ -13,6 +13,7 @@ export declare class ArrayEditor extends Vue {
     readonly: boolean;
     required: boolean;
     hasDeleteButton: boolean;
+    disableFilters: boolean;
     dragula?: Dragula;
     md?: MarkdownIt;
     hljs?: typeof hljs;
